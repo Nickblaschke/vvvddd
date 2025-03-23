@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Assistant</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f4f4f4;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+    header {
+      background-color: #003366;
+      color: white;
+      padding: 1rem 2rem;
+      text-align: center;
+    }
+    main {
+      flex: 1;
+      padding: 0;
+    }
+    footer {
+      background-color: #003366;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Assistant Chat</h1>
+  </header>
+  <main>
+    <!-- Chatbase Embed Script -->
+    <script>
+    (function(){
+      if(!window.chatbase||window.chatbase("getState")!=="initialized"){
+        window.chatbase=(...arguments)=>{
+          if(!window.chatbase.q){window.chatbase.q=[]}
+          window.chatbase.q.push(arguments)};
+        window.chatbase=new Proxy(window.chatbase,{
+          get(target,prop){
+            if(prop==="q"){return target.q}
+            return(...args)=>target(prop,...args)}})}
+      const onLoad=function(){
+        const script=document.createElement("script");
+        script.src="https://www.chatbase.co/embed.min.js";
+        script.id="MSXcGLCcEcT24cjiVsNBj";
+        script.domain="www.chatbase.co";
+        document.body.appendChild(script)};
+      if(document.readyState==="complete"){onLoad()}
+      else{window.addEventListener("load",onLoad)}
+    })();
+    </script>
+  </main>
+  <footer>
+    &copy; 2025 S&amp;L Hospitality
+  </footer>
+</body>
+</html>

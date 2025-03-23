@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admin Dashboard - S&L Hospitality</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+    header {
+      background-color: #003366;
+      color: white;
+      padding: 1rem 2rem;
+      text-align: center;
+    }
+    main {
+      flex: 1;
+      padding: 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+    h2 {
+      margin-top: 0;
+    }
+    section {
+      background: white;
+      padding: 1.5rem;
+      border-radius: 10px;
+      margin-bottom: 2rem;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    label {
+      display: block;
+      margin: 0.5rem 0 0.25rem;
+      font-weight: bold;
+    }
+    input[type="file"], input[type="text"] {
+      padding: 0.5rem;
+      width: 100%;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    button {
+      margin-top: 1rem;
+      padding: 0.75rem 1.5rem;
+      background-color: #005faa;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #004080;
+    }
+    footer {
+      background-color: #003366;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Admin Dashboard</h1>
+  </header>
+  <main>
+    <section>
+      <h2>Upload Property Documents</h2>
+      <form>
+        <label for="property">Property Name</label>
+        <input type="text" id="property" name="property" placeholder="e.g. Sleep Inn - Madison" />
+
+        <label for="file">Upload PDF/Doc File</label>
+        <input type="file" id="file" name="file" accept=".pdf,.doc,.docx" />
+
+        <button type="submit">Upload Document</button>
+      </form>
+    </section>
+
+    <section>
+      <h2>Quick Access Links</h2>
+      <ul>
+        <li><a href="index.html">Homepage</a></li>
+        <li><a href="assistant.html">Assistant Chat</a></li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Analytics (Coming Soon)</h2>
+      <p>This area will show bot usage per property, questions asked, time saved, etc.</p>
+    </section>
+  </main>
+  <footer>
+    &copy; 2025 S&amp;L Hospitality
+  </footer>
+</body>
+</html>

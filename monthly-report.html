@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>GM Monthly Report</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 2rem; background: #fafafa; }
+    h1 { color: #003366; }
+    label { font-weight: bold; margin-top: 1rem; display: block; }
+    textarea, input { width: 100%; padding: 0.75rem; margin: 0.5rem 0; border-radius: 6px; border: 1px solid #ccc; }
+    button { background-color: #005faa; color: white; padding: 0.75rem 1.5rem; border: none; border-radius: 8px; cursor: pointer; }
+  </style>
+</head>
+<body>
+  <h1>GM Monthly Report Builder</h1>
+  <form>
+    <label for="month">Month</label>
+    <input type="text" id="month" placeholder="e.g. February 2025" />
+    <label for="occupancy">Occupancy Summary</label>
+    <textarea id="occupancy"></textarea>
+    <label for="staff">Staffing Updates</label>
+    <textarea id="staff"></textarea>
+    <label for="maintenance">Maintenance Issues</label>
+    <textarea id="maintenance"></textarea>
+    <label for="guest">Guest Complaints</label>
+    <textarea id="guest"></textarea>
+    <button type="submit">Generate Report</button>
+  </form>
+</body>
+</html>
