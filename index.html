@@ -38,6 +38,8 @@
       font-size: 1.1rem;
       cursor: pointer;
       text-decoration: none;
+      display: inline-block;
+      margin: 0.5rem;
     }
     .btn:hover {
       background-color: #004080;
@@ -48,17 +50,37 @@
       text-align: center;
       padding: 1rem;
     }
+    ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 2rem 0;
+    }
+    li {
+      margin: 0.5rem 0;
+    }
+    a {
+      color: #005faa;
+      text-decoration: none;
+    }
   </style>
 </head>
 <body>
   <header>
     <h1>S&amp;L Hospitality AI Assistant</h1>
   </header>
-  <main id="main-content">
+  <main>
     <h2>Welcome to your internal assistant hub</h2>
     <p>Get instant answers, resources, and support across all properties.</p>
-    <a class="btn" href="assistant.html">Chat With the Assistant</a><br /><br />
+    <a class="btn" href="assistant.html">Chat With the Assistant</a>
     <a class="btn" href="admin.html">Go to Admin Dashboard</a>
+    
+    <h2>GM Tools</h2>
+    <ul>
+      <li><a href="training.html">Training & SOP Central</a></li>
+      <li><a href="communication-log.html">Communication Log</a></li>
+      <li><a href="monthly-report.html">GM Monthly Report</a></li>
+      <li><a href="ask-my-property.html">Ask My Property AI</a></li>
+    </ul>
   </main>
   <footer>
     &copy; 2025 S&amp;L Hospitality
